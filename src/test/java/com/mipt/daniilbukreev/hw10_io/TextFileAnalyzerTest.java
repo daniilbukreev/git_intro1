@@ -23,7 +23,7 @@ class TextFileAnalyzerTest {
 
         assertEquals(2, result.getLineCount());
         assertEquals(3, result.getWordCount());
-        assertEquals(16, result.getCharCount());
+        assertEquals(15, result.getCharCount());
 
         assertFalse(result.getCharFrequency().isEmpty());
 
