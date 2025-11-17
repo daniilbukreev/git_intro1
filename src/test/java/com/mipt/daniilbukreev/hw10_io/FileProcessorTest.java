@@ -23,7 +23,7 @@ class FileProcessorTest {
         assertEquals(3, parts.size());
 
         for (Path part: parts) {
-            assertTrue("Part file exist?: " + part, Files.exists(part));
+            assertTrue(Files.exists(part), "Part file exist?: " + part);
         }
 
         assertEquals(500, Files.size(parts.get(0)));
